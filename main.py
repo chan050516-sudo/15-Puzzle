@@ -2,7 +2,7 @@ import random
 import tkinter as tk
 
 class Logic:
-    def init(self, row, column):
+    def __init__(self, row, column):
         self.row = row
         self.column = column
         self.board = [[None for _ in range(self.column)] for _ in range(self.row)]
@@ -56,7 +56,7 @@ class Logic:
             
             
 class UI():
-    def init(self, row, column):
+    def __init__(self, row, column):
         self.row = row
         self.column = column
         self.root = tk.Tk()
